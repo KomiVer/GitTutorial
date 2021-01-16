@@ -8,3 +8,7 @@ print("hello")
 
 import numpy as np
 print("Takis")
+
+
+for x in range(10):
+    print(x)
