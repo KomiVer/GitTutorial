@@ -14,6 +14,7 @@ ___
 3. git remote add ... (connected cloud repo ... is smt additional)
 4. git log <br>
 5. git checkout commitHashCode filename
+
 ___
 ### Branch related Commands
 1. git branch
