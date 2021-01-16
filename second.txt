@@ -1,0 +1,8 @@
+hi there this is takis ; John type something below 
+panteli mou pantealaki mou
+
+import pandas 
+print("hello")
+
+for x in range(10):
+    print(x)
