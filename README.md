@@ -18,9 +18,10 @@ ___
 ### Branch related Commands
 1. git branch
 2. git branch -a
-3. git checkout -b new_branch_hname
+3. git checkout -b new_branch_name
 4. git checkout master
 5. git merge dev
-6. git push origin dev ... or
-7. git push --set-upstream origin dev (while in local branch setup remote repo once for all)
-8. git checkout --track origin/newsletter (for a remote branch to be shown in local branches as well)
+6. git branch -d (or -D) branch_name
+7. git push origin dev ... or
+8. git push --set-upstream origin dev (while in local branch setup remote repo once for all)
+9. git checkout --track origin/newsletter (for a remote branch to be shown in local branches as well)
