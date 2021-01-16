@@ -1,4 +1,4 @@
-## Tutorial Git Repository
+## A great Tutorial
 
 ### Common workflow
 1. git init  (initialize wd) 
