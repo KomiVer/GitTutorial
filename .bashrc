@@ -1,0 +1,5 @@
+alias src="source ~/.bashrc"
+alias nbr="nano ~/.bashrc"
+alias gcho="git checkout"
+alias gadd="git commit -am"
+alias gbr="git branch -a"
