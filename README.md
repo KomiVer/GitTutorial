@@ -1,7 +1,7 @@
 ## A great Tutorial
 
 ### Common workflow
-1. git init  (initialize wd) 
+1. git init  (initialize wd)
 2. git add <file name> or . (move file to stage step)
 3. git commit -m "blah blah" (from stage to repo to commit file with comment)
 4. git push origin master
@@ -22,7 +22,7 @@ ___
 3. git checkout -b new_branch_name
 4. git checkout master
 5. git merge dev (while in master merge dev, i.e. bring dev changes into master)
-6. git branch -d (or -D) branch_name
+6. git branch -d (or -D) branch_name ; git push origin --delete branch_name
 7. git push origin dev ... or
 8. git push --set-upstream origin dev (while in local branch setup remote repo once for all)
 9. git checkout --track origin/newsletter (for a remote branch to be shown in local branches as well)
