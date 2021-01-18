@@ -27,3 +27,10 @@ ___
 - git push --set-upstream origin dev (while in local branch -tup remote repo once for all)
 - git checkout --track origin/newsletter (for a remote branch to be shown in local branches as well)
 - git branch --merged
+
+### Stash related Commands
+- git stash save "stash message" ; stash uncommited changes
+- git stash list ; list stashes
+- git stash apply stash{0}
+- git stash pop ; or git stash pop stash{1}
+- git stash clear

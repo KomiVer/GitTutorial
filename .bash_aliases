@@ -71,6 +71,7 @@ alias gda='git diff HEAD'
 alias gi='git init'
 alias glg='git log --graph --oneline --decorate --all'
 alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
+alias gld='git log --stat'
 alias gm='git merge --no-ff'
 alias gma='git merge --abort'
 alias gmc='git merge --continue'
@@ -85,6 +86,7 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+alias gg="git add . && git commit -m "
 
 # =========================================
 # DOCKER ALIASES
