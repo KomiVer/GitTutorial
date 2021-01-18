@@ -1,28 +1,29 @@
 ## A great Tutorial
 
 ### Common workflow
-1. git init  (initialize wd)
-2. git add <file name> or . (move file to stage step)
-3. git commit -m "blah blah" (from stage to repo to commit file with comment)
-4. git push origin master
-5. git pull (in general) ** git clone (first time ever)
+- git init  (initialize wd)
+- git add <file name> or . (move file to stage step)
+- git commit -m "blah blah" (from stage to repo to commit file with comment)
+- git push origin master
+- git pull (in general) ** git clone (first time ever)
 
 ___
 ### Basic Commands
-1. git status (informs about file condition - completed or modified)
-2. git remote -v ( presents all available "cloud" storages connected)
-3. git remote add ... (connected cloud repo ... is smt additional)
-4. git log <br>
-5. git checkout commitHashCode filename
+- git status (informs about file condition - completed or -dified)
+- git remote -v ( presents all available "cloud" storages -nnected)
+- git remote add ... (connected cloud repo ... is smt -ditional)
+- git log <br>
+- git checkout commitHashCode filename
 
 ___
 ### Branch related Commands
-1. git branch
-2. git branch -a
-3. git checkout -b new_branch_name
-4. git checkout master
-5. git merge dev (while in master merge dev, i.e. bring dev changes into master)
-6. git branch -d (or -D) branch_name ; git push origin --delete branch_name
-7. git push origin dev ... or
-8. git push --set-upstream origin dev (while in local branch setup remote repo once for all)
-9. git checkout --track origin/newsletter (for a remote branch to be shown in local branches as well)
+- git branch
+- git branch -a
+- git checkout -b new_branch_name
+- git checkout master
+- git merge dev (while in master merge dev, i.e. bring dev -anges into master)
+- git branch -d (or -D) branch_name ; git push origin --delete -anch_name
+- git push origin dev ... or
+- git push --set-upstream origin dev (while in local branch -tup remote repo once for all)
+- git checkout --track origin/newsletter (for a remote branch to be shown in local branches as well)
+- git branch --merged
