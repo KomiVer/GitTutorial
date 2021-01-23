@@ -28,6 +28,7 @@ ___
 - git checkout --track origin/newsletter (for a remote branch to be shown in local branches as well)
 - git branch --merged
 
+___
 ### Stash related Commands
 - git stash save "stash message" ; stash uncommited changes
 - git stash list ; list stashes
@@ -35,6 +36,7 @@ ___
 - git stash pop ; or git stash pop stash{1}
 - git stash clear
 
+___
 ## DiffMerge related Commands
 - git difftool origin/master
 - git difftool --dir-dif -y -g -t meld
