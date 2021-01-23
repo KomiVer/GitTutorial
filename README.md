@@ -5,7 +5,7 @@
 - git add <file name> or . (move file to stage step)
 - git commit -m "blah blah" (from stage to repo to commit file with comment)
 - git push origin master
-- git pull (in general) ** git clone (first time ever)
+- git pull (in general) ; git clone (first time ever)
 
 ___
 ### Basic Commands
@@ -13,7 +13,7 @@ ___
 - git remote -v ( presents all available "cloud" storages -nnected)
 - git remote add ... (connected cloud repo ... is smt -ditional)
 - git log <br>
-- git checkout commitHashCode filename
+- git checkout commitHashCode filename ; foo
 
 ___
 ### Branch related Commands
