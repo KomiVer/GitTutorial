@@ -14,6 +14,7 @@ ___
 - git remote add ... (connected cloud repo ... is smt -ditional)
 - git log <br>
 - git checkout commitHashCode filename
+- git rm -r cached filename
 
 ___
 ### Branch related Commands
