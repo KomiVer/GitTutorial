@@ -34,8 +34,11 @@ ___
 - git stash apply stash{0}
 - git stash pop ; or git stash pop stash{1}
 - git stash clear
+<<<<<<< HEAD
 
 ## DiffMerge related Commands
 - git difftool origin/master
 - git difftool --dir-dif -y -g -t meld
 - git mergetool --tool=meld
+=======
+>>>>>>> ca68f6abf973fe27022cbc61fa36d7701c1ebf61
