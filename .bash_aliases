@@ -60,11 +60,19 @@ alias gsts='git stash save'
 alias gstc='git stash clear'
 
 alias gg="git add . && git commit -m "
-alias gdd="git difftool -t meld origin/"
-alias gmm="git mergetool --tool=meld"
+alias gdt="git difftool"
+alias gmt="git mergetool"
+
+# alias gdd="git difftool -t meld origin/"
+# alias gmm="git mergetool --tool=meld"
 # alias gdm="git difftool --dir-dif -y -g -t meld"
 
 gdf () {
+    currentBranch=$(git branch --show-current)
+    git diff --stat $currentBranch origin/$currentBranch
+}
+
+gdfa () {
     currentBranch=$(git branch --show-current)
     echo 'diff checks : '
     echo ''

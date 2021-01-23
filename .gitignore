@@ -1,6 +1,8 @@
 # exclude all directories
 /* 
 
-# re
+# raise exclusion
 # !/folder1
 # !/folder3
+
+!.gitconfig

@@ -1,0 +1,19 @@
+[user]
+	email = Takis_a29@hotmail.com
+	name = Takfes
+[credential]
+    helper = store
+[log]
+	decorate = auto
+[diff]
+    tool = meld
+[difftool "meld"]
+    path = /usr/bin/meld
+[difftool]
+    prompt = false
+[merge]
+    tool = meld
+[mergetool "meld"]
+    path = /usr/bin/meld
+[difftool]
+    keepBackup = false
