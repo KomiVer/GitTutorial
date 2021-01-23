@@ -1,12 +1,11 @@
 # =========================================
 # GENERAL ALIASES
 # =========================================
-export PATH=$PATH:~/Desktop/sckool/scripts
 
-alias aliases="head ~/.bash_aliases"
-alias src="source ~/.bash_aliases"
-alias nba="nano ~/.bash_aliases"
+alias qq="source ~/.bash_aliases"
 alias cba="code ~/.bash_aliases"
+alias aba="atom ~/.bash_aliases"
+alias nba="nano ~/.bash_aliases"
 alias vba="vim ~/.bash_aliases"
 alias nau="nautilus ."
 alias crone="crontab -e"
@@ -18,33 +17,18 @@ greet() {
     echo "hello $1"
 }
 
-extract() {
-    if [ $# -lt 1 ]; then
-    echo "Usage: $(basename "$0") file"
-    exit 1
-    fi
-    if [ -f "$1" ]; then
-        case $1 in
-            *.tar.xz)   tar -xvf "$1"                         ;;
-            *.tar.bz2)  tar -jxvf "$1"                        ;;
-            *.tar.gz)   tar -zxvf "$1"                        ;;
-            *.bz2)      bunzip2 "$1"                          ;;
-            *.dmg)      hdiutil mount "$1"                    ;;
-            *.gz)       gunzip "$1"                           ;;
-            *.tar)      tar -xvf "$1"                         ;;
-            *.tbz2)     tar -jxvf "$1"                        ;;
-            *.tgz)      tar -zxvf "$1"                        ;;
-            *.zip)      unzip "$1"                            ;;
-            *.pax)      cat "$1" | pax -r                     ;;
-            *.pax.z)    uncompress "$1" --stdout | pax -r     ;;
-            *.rar)      7z x "$1"                             ;;
-            *.z)        uncompress "$1"                       ;;
-            *.7z)       7z x "$1"                             ;;
-            *)          echo "'$1' cannot be extracted/mounted via extract()" ;;
-        esac
-    else
-        echo "'$1' is not a valid file"
-    fi
+gdf () {
+    currentBranch=$(git branch --show-current)
+    echo 'diff checks : '
+    echo ''
+    for branch in $(git for-each-ref --format='%(refname)' refs/heads/); do
+        # git log --oneline "$branch" ^origin/master
+        echo '*' [ $currentBranch ] '<--->' [ "$branch" ]
+        # git diff --name-status "$branch"
+        git diff --stat "$branch"
+        # git diff --stat --name-only "$branch"
+        echo ''
+    done
 }
 
 # =========================================
@@ -127,3 +111,36 @@ dnames() {
 	done
 }
 
+
+# =========================================
+# EXTRACT
+# =========================================
+
+extract() {
+    if [ $# -lt 1 ]; then
+    echo "Usage: $(basename "$0") file"
+    exit 1
+    fi
+    if [ -f "$1" ]; then
+        case $1 in
+            *.tar.xz)   tar -xvf "$1"                         ;;
+            *.tar.bz2)  tar -jxvf "$1"                        ;;
+            *.tar.gz)   tar -zxvf "$1"                        ;;
+            *.bz2)      bunzip2 "$1"                          ;;
+            *.dmg)      hdiutil mount "$1"                    ;;
+            *.gz)       gunzip "$1"                           ;;
+            *.tar)      tar -xvf "$1"                         ;;
+            *.tbz2)     tar -jxvf "$1"                        ;;
+            *.tgz)      tar -zxvf "$1"                        ;;
+            *.zip)      unzip "$1"                            ;;
+            *.pax)      cat "$1" | pax -r                     ;;
+            *.pax.z)    uncompress "$1" --stdout | pax -r     ;;
+            *.rar)      7z x "$1"                             ;;
+            *.z)        uncompress "$1"                       ;;
+            *.7z)       7z x "$1"                             ;;
+            *)          echo "'$1' cannot be extracted/mounted via extract()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
