@@ -12,6 +12,7 @@ alias crone="crontab -e"
 alias sck="cd ~/Desktop/sckool"
 alias docker="sudo docker"
 alias hist="history"
+alias histg="history | grep "
 
 # =========================================
 # GIT ALIASES
