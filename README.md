@@ -1,4 +1,4 @@
-## Git Commands
+## Git Useful Commands
 
 ### Common workflow
 - git init  (initialize wd)
