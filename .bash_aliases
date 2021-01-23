@@ -55,8 +55,9 @@ alias gstp='git stash pop'
 alias gsts='git stash save'
 
 alias gg="git add . && git commit -m "
-alias gdm="git difftool --dir-dif -y -g -t meld"
+alias gdd="git difftool"
 alias gmm="git mergetool --tool=meld"
+# alias gdm="git difftool --dir-dif -y -g -t meld"
 
 gdf () {
     currentBranch=$(git branch --show-current)
