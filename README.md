@@ -13,7 +13,7 @@ ___
 - git remote -v ( presents all available "cloud" storages -nnected)
 - git remote add ... (connected cloud repo ... is smt -ditional)
 - git log <br>
-- git checkout commitHashCode filename
+- git checkout commitHashCode filename ; foo
 - git rm -r cached filename
 
 ___
