@@ -1,0 +1,6 @@
+# exclude all directories
+/* 
+
+# re
+!/folder1
+!/folder3
