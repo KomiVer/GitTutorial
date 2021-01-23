@@ -37,3 +37,5 @@ ___
 
 ## DiffMerge related Commands
 - git difftool origin/master
+- git difftool --dir-dif -y -g -t meld
+- git mergetool --tool=meld
