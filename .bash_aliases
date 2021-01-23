@@ -33,7 +33,9 @@ alias gcob='git checkout -b'
 alias gcom='git checkout master'
 alias gcos='git checkout staging'
 alias gcod='git checkout develop'
+alias gf='git fetch'
 alias gd='git diff'
+alias gdn='git diff --name-only'
 alias gda='git diff HEAD'
 alias gi='git init'
 alias glg='git log --graph --oneline --decorate --all'
@@ -44,6 +46,7 @@ alias gma='git merge --abort'
 alias gmc='git merge --continue'
 alias gpl='git pull'
 alias gps='git push'
+alias gpsd='git push origin --delete '
 alias gpr='git pull --rebase'
 alias gr='git rebase'
 alias gs='git status'
@@ -54,9 +57,10 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+alias gstc='git stash clear'
 
 alias gg="git add . && git commit -m "
-alias gdd="git difftool"
+alias gdd="git difftool -t meld origin/"
 alias gmm="git mergetool --tool=meld"
 # alias gdm="git difftool --dir-dif -y -g -t meld"
 

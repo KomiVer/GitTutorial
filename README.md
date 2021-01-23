@@ -13,7 +13,8 @@ ___
 - git remote -v ( presents all available "cloud" storages -nnected)
 - git remote add ... (connected cloud repo ... is smt -ditional)
 - git log <br>
-- git checkout commitHashCode filename ; foo
+- git checkout commitHashCode filename ... retrieve previous version of a file
+- git rm -r cached filename
 
 ___
 ### Branch related Commands
@@ -40,4 +41,5 @@ ___
 ### DiffMerge related Commands
 - git difftool origin/master
 - git difftool --dir-dif -y -g -t meld
+- git diff --name-only ; --diff-filter=U
 - git mergetool --tool=meld
