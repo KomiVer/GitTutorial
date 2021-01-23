@@ -13,24 +13,6 @@ alias sck="cd ~/Desktop/sckool"
 alias docker="sudo docker"
 alias hist="history"
 
-greet() {
-    echo "hello $1"
-}
-
-gdf () {
-    currentBranch=$(git branch --show-current)
-    echo 'diff checks : '
-    echo ''
-    for branch in $(git for-each-ref --format='%(refname)' refs/heads/); do
-        # git log --oneline "$branch" ^origin/master
-        echo '*' [ $currentBranch ] '<--->' [ "$branch" ]
-        # git diff --name-status "$branch"
-        git diff --stat "$branch"
-        # git diff --stat --name-only "$branch"
-        echo ''
-    done
-}
-
 # =========================================
 # GIT ALIASES
 # https://jonsuh.com/blog/git-command-line-shortcuts/
@@ -59,7 +41,8 @@ alias gld='git log --stat'
 alias gm='git merge --no-ff'
 alias gma='git merge --abort'
 alias gmc='git merge --continue'
-alias gp='git pull'
+alias gpl='git pull'
+alias gps='git push'
 alias gpr='git pull --rebase'
 alias gr='git rebase'
 alias gs='git status'
@@ -70,7 +53,24 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+
 alias gg="git add . && git commit -m "
+alias gdm="git difftool --dir-dif -y -g -t meld"
+alias gmm="git mergetool --tool=meld"
+
+gdf () {
+    currentBranch=$(git branch --show-current)
+    echo 'diff checks : '
+    echo ''
+    for branch in $(git for-each-ref --format='%(refname)' refs/heads/); do
+        # git log --oneline "$branch" ^origin/master
+        echo '*' [ $currentBranch ] '<--->' [ "$branch" ]
+        # git diff --name-status "$branch"
+        git diff --stat "$branch"
+        # git diff --stat --name-only "$branch"
+        echo ''
+    done
+}
 
 # =========================================
 # DOCKER ALIASES
