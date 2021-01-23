@@ -34,3 +34,6 @@ ___
 - git stash apply stash{0}
 - git stash pop ; or git stash pop stash{1}
 - git stash clear
+
+## DiffMerge related Commands
+- git difftool origin/master
