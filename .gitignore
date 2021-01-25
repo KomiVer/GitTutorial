@@ -6,3 +6,4 @@
 # !/folder3
 
 !.gitconfig
+!.bash_aliases_wsl2
